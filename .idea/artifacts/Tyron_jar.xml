@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Tyron:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Tyron_jar</output-path>
+    <root id="archive" name="Tyron.jar">
+      <element id="module-output" name="Tyron" />
+    </root>
+  </artifact>
+</component>
