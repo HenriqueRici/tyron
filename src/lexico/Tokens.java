@@ -1,9 +1,11 @@
 package lexico;
 
+import sintatico.Terminal;
+
 import java.util.Arrays;
 
 public class Tokens {
-    private String token;
+    private Terminal token;
     private int linha;
     private int coluna;
     private String identificador;
@@ -11,7 +13,7 @@ public class Tokens {
     //verifica se existe o identificador
     public Tokens(String token, String identificador, int linha, int coluna){
         this.identificador = identificador;
-        this.token = token;
+        this.token = Terminal.toEnum(token);
         this.linha = linha;
         this.coluna = coluna;
    }
@@ -31,11 +33,38 @@ public class Tokens {
         return Arrays.asList('(', ')', ';', '+', '*', '-', '/', '<', '>', '=').contains(ch);
     }
 
-    public String getToken() {
+    public Terminal getToken() {
         return token;
     }
 
-    //printa
+    public void setToken(String token) {
+        this.token = Terminal.toEnum(token);
+    }
+
+    public int getLinha() {
+        return linha;
+    }
+
+    public void setLinha(int linha) {
+        this.linha = linha;
+    }
+
+    public int getColuna() {
+        return coluna;
+    }
+
+    public void setColuna(int coluna) {
+        this.coluna = coluna;
+    }
+
+    public String getIdentificador() {
+        return identificador;
+    }
+
+    public void setIdentificador(String identificador) {
+        this.identificador = identificador;
+    }
+
     @Override
     public String toString() {
         return token + ", " + identificador + ", " + linha + ", " + coluna ;

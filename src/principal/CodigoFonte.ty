@@ -4,7 +4,7 @@ main
 
     variavel = 5;
 
-    input(valorLido);
+    input (valorLido);
 
     if(variavel < 5)
         output("eh menor que 5");

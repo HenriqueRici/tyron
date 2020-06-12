@@ -1,6 +1,7 @@
 package lexico;
 
 import utilitarios.ExcecaoLexico;
+import utilitarios.Flag;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +17,7 @@ public class Lexico {
         return matriz;
     }
 
-    public List<Tokens> analisador(List<char[]> list){
+    public List<Tokens> analisador(List<char[]> list) {
         List<Tokens> listTokens = new ArrayList<>();
         int linha;
         for (linha = 0; linha < list.size(); linha++) {
@@ -32,35 +33,34 @@ public class Lexico {
                     if (conteudoLinha[coluna] == '\"') {
                         int cont = coluna;
                         buffer = new StringBuffer();
-                        boolean flag = true;
                         do {
                             buffer.append(conteudoLinha[cont++]);
                             if (cont == conteudoLinha.length) {
-                                flag = false;
                                 throw new ExcecaoLexico("ERRO LEXICO, " + buffer.toString() + ", " + (linha + 1) + ", " + (cont + 1 - buffer.length()));
                             }
                         } while (conteudoLinha[cont] != '\"');
-
-                        if (flag) {
-                            buffer.append("\"");
-                            listTokens.add(new Tokens("STRING", buffer.toString(), linha + 1, cont + 2 - buffer.length()));
-                            coluna += buffer.length() - 1;
-                        }
-
+                        buffer.append("\"");
+                        listTokens.add(new Tokens("STRING", buffer.toString(), linha + 1, cont + 2 - buffer.length()));
+                        print(listTokens.get(listTokens.size() - 1), listTokens.size());
+                        coluna += buffer.length() - 1;
                         buffer = new StringBuffer();
                     } else if (Tokens.simbolos(conteudoLinha[coluna])) {
                         Character ch = conteudoLinha[coluna];
-                        listTokens.add(new Tokens(ch.toString(), ch.toString(), linha + 1, coluna + 1));
+                        listTokens.add(new Tokens(ch.toString(), ch.toString(), linha + 1, coluna + 2 - buffer.length()));
+                        print(listTokens.get(listTokens.size() - 1), listTokens.size());
                         buffer = new StringBuffer();
                     } else if (!Character.isLetterOrDigit(proximo)) {
                         if (Tokens.palavraChave(buffer.toString())) {
                             listTokens.add(new Tokens(buffer.toString().toUpperCase(), buffer.toString(), linha + 1, coluna + 2 - buffer.length()));
-
+                            print(listTokens.get(listTokens.size() - 1), listTokens.size());
                         } else if (Tokens.numero(buffer.toString())) {
                             listTokens.add(new Tokens("NUMERAL", buffer.toString(), linha + 1, coluna + 2 - buffer.length()));
+                            print(listTokens.get(listTokens.size() - 1), listTokens.size());
+
 
                         } else if (Tokens.id(buffer.toString())) {
                             listTokens.add(new Tokens("ID", buffer.toString(), linha + 1, coluna + 2 - buffer.length()));
+                            print(listTokens.get(listTokens.size() - 1), listTokens.size());
                         } else {
                             throw new ExcecaoLexico("ERRO LEXICO, " + buffer.toString() + ", " + (linha + 1) + ", " + (coluna + 2 - buffer.length()));
                         }
@@ -69,7 +69,17 @@ public class Lexico {
                 }
             }
         }
-        listTokens.add(new Tokens("FINAL", "$", linha + 1, 0));
+        listTokens.add(new Tokens("FINAL", "$", linha + 1, 1));
+        print(listTokens.get(listTokens.size() - 1), listTokens.size());
         return listTokens;
+    }
+
+    public void print(Tokens msg, int size) {
+        if (Flag.LEXICO.isAtivo()) {
+            if (size == 1){
+                System.out.println("Token, Lexema, Linha, Coluna");
+            }
+            System.out.println(msg.toString());
+        }
     }
 }
