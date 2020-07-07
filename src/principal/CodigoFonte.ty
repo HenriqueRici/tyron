@@ -1,5 +1,5 @@
 main
-    number variavel;
+
     number valorLido;
 
     variavel = 5;
@@ -7,7 +7,7 @@ main
     input (valorLido);
 
     if(variavel < 5)
-        output("eh menor que 5");
+        output ("eh menor que 5);
     else
         if(variavel > 5)
             output("eh maior que 5");
@@ -18,7 +18,7 @@ main
 
     while(valorLido < variavel)
         output(valorLido);
-        valorLido = valorLido + 1;
+        valorLido = 1/valorLido;
     endwhile
 
 endmain

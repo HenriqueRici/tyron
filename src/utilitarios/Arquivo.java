@@ -5,10 +5,10 @@ package utilitarios;
     import java.util.ArrayList;
     import java.util.List;
 public class Arquivo {
-    public List<String> lerArquivo(String nomeArquivo){
+    public List<String> lerArquivo(String caminhoArquivo){
         List<String> linhas =  new ArrayList<>();
         try {
-            BufferedReader arquivo = new BufferedReader(new FileReader(nomeArquivo));
+            BufferedReader arquivo = new BufferedReader(new FileReader(caminhoArquivo));
             while (arquivo.ready()){
                 linhas.add(arquivo.readLine());
             }

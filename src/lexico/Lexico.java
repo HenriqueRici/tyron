@@ -8,7 +8,6 @@ import java.util.List;
 import java.util.stream.Stream;
 
 public class Lexico {
-    //transforma a lista recebida em um lista de char
     public List<char[]> desfragmentador(List<String> lista) {
         List<char[]> matriz = new ArrayList<>();
         for (String s : lista) {
@@ -25,7 +24,7 @@ public class Lexico {
             char[] conteudoLinha = list.get(linha);
             if (!Stream.of(conteudoLinha).allMatch(chars -> chars.equals(' '))) {
                 for (int coluna = 0; coluna < conteudoLinha.length; coluna++) {
-                    if (conteudoLinha[coluna] == ' ') {
+                    if (conteudoLinha[coluna] == ' ' || conteudoLinha[coluna] == '\t') {
                         continue;
                     }
                     buffer.append(conteudoLinha[coluna]);
@@ -56,8 +55,6 @@ public class Lexico {
                         } else if (Tokens.numero(buffer.toString())) {
                             listTokens.add(new Tokens("NUMERAL", buffer.toString(), linha + 1, coluna + 2 - buffer.length()));
                             print(listTokens.get(listTokens.size() - 1), listTokens.size());
-
-
                         } else if (Tokens.id(buffer.toString())) {
                             listTokens.add(new Tokens("ID", buffer.toString(), linha + 1, coluna + 2 - buffer.length()));
                             print(listTokens.get(listTokens.size() - 1), listTokens.size());

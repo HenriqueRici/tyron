@@ -31,8 +31,4 @@ public enum Flag {
     public void setAtivo(boolean ativo) {
         this.ativo = ativo;
     }
-
-    public String getFlag() {
-        return flag;
-    }
 }

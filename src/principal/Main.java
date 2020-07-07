@@ -1,15 +1,13 @@
 package principal;
 
+import semantico.Semantico;
 import sintatico.Sintatico;
-import utilitarios.ExcecaoLexico;
 import lexico.Lexico;
 import lexico.Tokens;
 import utilitarios.Arquivo;
-import utilitarios.Flag;
 import utilitarios.FlagService;
 
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -18,6 +16,7 @@ public class Main {
         flagService.separador(args);
         Arquivo arquivo = new Arquivo();
         List<String> listaArq = arquivo.lerArquivo(FlagService.caminho(args));
+
         Lexico lexico = new Lexico();
         List<char[]> listaDesfragmentada = lexico.desfragmentador(listaArq);
 
@@ -32,7 +31,9 @@ public class Main {
         sintatico.analisador();
         System.out.println("Analise sintatica concluida com sucesso!\n");
 
-
-
+        System.out.println("Iniciando analise semantica!");
+        Semantico semantico = new Semantico(listaTokens);
+        semantico.analisador();
+        System.out.println("Analise semantica concluida com sucesso!\n");
     }
 }
