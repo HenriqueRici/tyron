@@ -19,12 +19,9 @@ public class Main {
 
         Lexico lexico = new Lexico();
         List<char[]> listaDesfragmentada = lexico.desfragmentador(listaArq);
-
         System.out.println("Iniciando analise lexica!");
         List<Tokens> listaTokens = lexico.analisador(listaDesfragmentada);
         System.out.println("Analise lexica concluida com sucesso!\n");
-
-
 
         System.out.println("Iniciando analise sintatica!");
         Sintatico sintatico = new Sintatico(listaTokens);

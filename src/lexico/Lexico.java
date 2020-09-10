@@ -24,7 +24,7 @@ public class Lexico {
             char[] conteudoLinha = list.get(linha);
             if (!Stream.of(conteudoLinha).allMatch(chars -> chars.equals(' '))) {
                 for (int coluna = 0; coluna < conteudoLinha.length; coluna++) {
-                    if (conteudoLinha[coluna] == ' ' || conteudoLinha[coluna] == '\t') {
+                    if (conteudoLinha[coluna] == ' ') {
                         continue;
                     }
                     buffer.append(conteudoLinha[coluna]);

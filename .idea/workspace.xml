@@ -1,55 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="Tyron:jar" />
-    </artifacts-to-build>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2293dc1f-8280-4a1c-939a-cfe18efedc2e" name="Default Changelist" comment="">
+    <list default="true" id="1ab539c3-4d7d-4468-a3ed-a29dcf23a3bd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Tyron_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tyron/META-INF/Tyron.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tyron/principal/CodigoFonte.ty" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tyron/principal/CodigoFonte.ty" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lexico/Lexico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lexico/Lexico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/principal/CodigoFonte.ty" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal/CodigoFonte.ty" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/principal/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sintatico/PalavrasTyron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sintatico/PalavrasTyron.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/semantico/Semantico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/semantico/Semantico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utilitarios/Arquivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilitarios/Arquivo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilitarios/Flag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilitarios/Flag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilitarios/FlagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilitarios/FlagService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-        <option value="Enum" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1Yl7rHFDK46wxVnxzvBygXmxRM8" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/HenriqueRici/tyron" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1et5T09KOR4f1AiO0jqodxJuQZY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
-    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
-    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
-    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="tyron" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -57,22 +48,14 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\carlo\Desktop\Tyron\src\principal" />
-      <recent name="C:\Users\carlo\IdeaProjects\Tyron\teste" />
-    </key>
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="principal.Main" />
       <module name="Tyron" />
-      <option name="PROGRAM_PARAMETERS" value="-lexico -sintatico C:\Users\carlo\IdeaProjects\Tyron\src\principal\CodigoFonte.ty" />
+      <option name="PROGRAM_PARAMETERS" value="-lexico C:\Users\carlo\IdeaProjects\Tyron\src\principal\CodigoFonte.ty" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="principal.*" />
@@ -83,126 +66,109 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2293dc1f-8280-4a1c-939a-cfe18efedc2e" name="Default Changelist" comment="" />
-      <created>1583505523908</created>
+      <changelist id="1ab539c3-4d7d-4468-a3ed-a29dcf23a3bd" name="Default Changelist" comment="" />
+      <created>1595128052309</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1583505523908</updated>
-      <workItem from="1583505527807" duration="20319000" />
-      <workItem from="1583549519058" duration="6665000" />
-      <workItem from="1583568588946" duration="770000" />
-      <workItem from="1583599565228" duration="192000" />
-      <workItem from="1583684919427" duration="27668000" />
-      <workItem from="1583715973188" duration="2714000" />
-      <workItem from="1583719445653" duration="117000" />
-      <workItem from="1583767226244" duration="5685000" />
-      <workItem from="1583870631058" duration="952000" />
-      <workItem from="1583873410594" duration="34000" />
-      <workItem from="1583876687503" duration="29000" />
-      <workItem from="1583933875899" duration="6671000" />
-      <workItem from="1583945008317" duration="4009000" />
-      <workItem from="1583952391522" duration="449000" />
-      <workItem from="1584115525981" duration="1415000" />
-      <workItem from="1584117217289" duration="41000" />
-      <workItem from="1584117442540" duration="238000" />
-      <workItem from="1584117699859" duration="2232000" />
-      <workItem from="1584120169906" duration="24000" />
-      <workItem from="1584120322446" duration="17000" />
-      <workItem from="1584120514825" duration="606000" />
-      <workItem from="1584122834498" duration="756000" />
-      <workItem from="1584199314826" duration="2998000" />
-      <workItem from="1584369625913" duration="1192000" />
-      <workItem from="1584373620719" duration="600000" />
-      <workItem from="1584422253341" duration="427000" />
-      <workItem from="1584422770003" duration="148000" />
-      <workItem from="1584988713904" duration="13308000" />
-      <workItem from="1585015900129" duration="2807000" />
-      <workItem from="1585070238665" duration="2049000" />
-      <workItem from="1585079418146" duration="1751000" />
-      <workItem from="1585188936845" duration="278000" />
-      <workItem from="1585189439927" duration="35000" />
-      <workItem from="1591649610888" duration="705000" />
-      <workItem from="1591988880838" duration="2308000" />
-      <workItem from="1591991238891" duration="1194000" />
-      <workItem from="1592234775549" duration="19000" />
-      <workItem from="1592323367720" duration="545000" />
-      <workItem from="1592323969375" duration="16000" />
-      <workItem from="1592324055697" duration="299000" />
-      <workItem from="1592325641879" duration="8931000" />
-      <workItem from="1592400012394" duration="4051000" />
-      <workItem from="1592505978369" duration="264000" />
-      <workItem from="1594059159284" duration="12067000" />
-      <workItem from="1594093181994" duration="2347000" />
+      <updated>1595128052309</updated>
+      <workItem from="1595128054446" duration="44000" />
+      <workItem from="1595128154317" duration="41000" />
+      <workItem from="1595701539003" duration="719000" />
+      <workItem from="1595879224957" duration="20000" />
+      <workItem from="1595892663651" duration="553000" />
+      <workItem from="1596033273665" duration="86000" />
+      <workItem from="1597075483519" duration="3398000" />
+      <workItem from="1597111084821" duration="921000" />
+      <workItem from="1597172216844" duration="3324000" />
+      <workItem from="1597181047293" duration="15000" />
+      <workItem from="1599696628086" duration="1048000" />
+      <workItem from="1599697736458" duration="951000" />
+      <workItem from="1599698736582" duration="19000" />
+      <workItem from="1599698794087" duration="414000" />
+      <workItem from="1599758857838" duration="816000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592323390867">
+    <state x="361" y="53" key="#Plugins" timestamp="1599698751333">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1592323390867" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1592506240485">
+    <state x="361" y="53" key="#Plugins/0.0.1536.824@0.0.1536.824" timestamp="1599698751333" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595893050175">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592506240485" />
-    <state width="1493" height="157" key="GridCell.Tab.0.bottom" timestamp="1594095535776">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1595893050175" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1599698658265">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="157" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594095535776" />
-    <state width="1493" height="157" key="GridCell.Tab.0.center" timestamp="1594095535776">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599698658265" />
+    <state width="1493" height="494" key="GridCell.Tab.0.bottom" timestamp="1599699209401">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="157" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594095535776" />
-    <state width="1493" height="157" key="GridCell.Tab.0.left" timestamp="1594095535775">
+    <state width="1493" height="494" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599699209401" />
+    <state width="1493" height="494" key="GridCell.Tab.0.center" timestamp="1599699209401">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="157" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594095535775" />
-    <state width="1493" height="157" key="GridCell.Tab.0.right" timestamp="1594095535776">
+    <state width="1493" height="494" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599699209401" />
+    <state width="1493" height="494" key="GridCell.Tab.0.left" timestamp="1599699209401">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="157" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594095535776" />
-    <state width="1493" height="157" key="GridCell.Tab.1.bottom" timestamp="1594095535777">
+    <state width="1493" height="494" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599699209401" />
+    <state width="1493" height="494" key="GridCell.Tab.0.right" timestamp="1599699209401">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="157" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594095535777" />
-    <state width="1493" height="157" key="GridCell.Tab.1.center" timestamp="1594095535776">
+    <state width="1493" height="494" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599699209401" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1597078918978">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="157" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1594095535776" />
-    <state width="1493" height="157" key="GridCell.Tab.1.left" timestamp="1594095535776">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1597078918978" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1597078918978">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="157" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1594095535776" />
-    <state width="1493" height="157" key="GridCell.Tab.1.right" timestamp="1594095535776">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1597078918978" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1597078918978">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="157" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1594095535776" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1594093180329">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1597078918978" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1597078918978">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1594093180329" />
-    <state x="209" y="33" key="new project wizard" timestamp="1591650319229">
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1597078918978" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1599698696663">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="209" y="33" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1591650319229" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Tyron$Main.ic" NAME="Main Coverage Results" MODIFIED="1594094545022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>principal.*</FILTER>
-    </SUITE>
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1599698696663" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1595879232152">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1595879232152" />
   </component>
 </project>

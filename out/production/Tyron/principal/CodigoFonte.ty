@@ -1,22 +1,18 @@
 main
     number variavel;
     number valorLido;
-    number a;
-    number b;
-    number c;
-    c = 5;
-    a = b/0;
+
     variavel = 5;
 
-    input (valorLido);
+    input(valorLido);
 
     if(variavel < 5)
-        output ("eh menor que 5");
+        output("eh menor que 5");
     else
-        if(variavel > 5)
-            output("eh maior que 5");
-        else
-            output("eh igual a 5");
+    if(variavel > 5)
+        output("eh maior que 5");
+    else
+        output("eh igual a 5");
         endif
     endif
 
@@ -24,5 +20,4 @@ main
         output(valorLido);
         valorLido = valorLido + 1;
     endwhile
-
 endmain
