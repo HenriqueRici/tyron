@@ -1,0 +1,18 @@
+main
+    number numero;
+    number fatorial;
+    number resultado;
+
+    resultado = 1;
+
+    output("Entre com um numero");
+    input(numero);
+
+    while(fatorial < numero)
+       fatorial = fatorial + 1;
+       resultado = resultado * fatorial;
+    endwhile
+
+    output(resultado);
+
+endmain

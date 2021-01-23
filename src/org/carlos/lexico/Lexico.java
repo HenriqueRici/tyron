@@ -1,7 +1,7 @@
-package lexico;
+package org.carlos.lexico;
 
-import utilitarios.ExcecaoLexico;
-import utilitarios.Flag;
+import org.carlos.utilitarios.ExcecaoLexico;
+import org.carlos.utilitarios.Flag;
 
 import java.util.ArrayList;
 import java.util.List;

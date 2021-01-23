@@ -1,19 +1,15 @@
-package semantico;
+package org.carlos.semantico;
 
 
-import lexico.Tokens;
-import sintatico.Terminal;
-import utilitarios.ExcecaoSemantico;
-import utilitarios.Flag;
+import org.carlos.lexico.Tokens;
+import org.carlos.sintatico.Terminal;
+import org.carlos.utilitarios.ExcecaoSemantico;
+import org.carlos.utilitarios.Flag;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-// git add .
-// git commit -m "Implementação do semantico"
-// git push
 
 public class Semantico {
     private List<Tokens> listaTokens;
@@ -44,6 +40,10 @@ public class Semantico {
                         }
                     }
                 }
+            } else if (tokenAtual.getToken().equals(Terminal.INPUT)) {
+                i += 2;
+                var input = listaTokens.get(i).getIdentificador();
+                listaDeclarados.put(input, true);
             } else if (tokenAtual.getToken().equals(Terminal.IDENTIFIER)) {
                 if (!listaDeclarados.containsKey(tokenAtual.getIdentificador())) {
                     erro("a variavel \"" + tokenAtual.getIdentificador() + "\" nao foi declarada! ",
@@ -81,6 +81,10 @@ public class Semantico {
             }
             i++;
         }
+    }
+
+    public Map<String, Boolean> getListaDeclarados() {
+        return listaDeclarados;
     }
 
     private void erro(String erro, int linha, int coluna) {

@@ -1,4 +1,4 @@
-package sintatico;
+package org.carlos.sintatico;
 
 public enum NaoTerminal implements PalavrasTyron {
     PRINCIPAL(0, "principal"),

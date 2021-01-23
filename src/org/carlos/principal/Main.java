@@ -1,17 +1,23 @@
-package principal;
+package org.carlos.principal;
 
-import semantico.Semantico;
-import sintatico.Sintatico;
-import lexico.Lexico;
-import lexico.Tokens;
-import utilitarios.Arquivo;
-import utilitarios.FlagService;
+import org.carlos.codigoFinal.CodigoFinal;
+import org.carlos.intermediario.Intermediario;
+import org.carlos.semantico.Semantico;
+import org.carlos.sintatico.Sintatico;
+import org.carlos.lexico.Lexico;
+import org.carlos.lexico.Tokens;
+import org.carlos.utilitarios.Arquivo;
+import org.carlos.utilitarios.FlagService;
 
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         FlagService flagService = new FlagService();
         flagService.separador(args);
         Arquivo arquivo = new Arquivo();
@@ -32,5 +38,14 @@ public class Main {
         Semantico semantico = new Semantico(listaTokens);
         semantico.analisador();
         System.out.println("Analise semantica concluida com sucesso!\n");
+
+        Intermediario intermediario = new Intermediario(listaTokens, new ArrayList<>(semantico.getListaDeclarados().keySet()));
+        var codigoInter = intermediario.gerarCodigo();
+
+        CodigoFinal codigoFinal = new CodigoFinal(codigoInter);
+        var finalCodigo = codigoFinal.geraCodigoFinal();
+        codigoFinal.geraArquivo(finalCodigo, FlagService.caminho(args));
+
+
     }
 }

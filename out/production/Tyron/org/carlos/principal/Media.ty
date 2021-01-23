@@ -1,0 +1,29 @@
+main
+    number numNota;
+    number media;
+    number somaNota;
+    number nota;
+    number aux;
+
+    output("Insira a quantidade de notas:");
+    input(numNota);
+    aux = numNota;
+
+    while(aux > 0)
+        output("Insira uma nota:");
+        input(nota);
+        somaNota = somaNota + nota;
+        aux = aux - 1;
+    endwhile
+
+    media = somaNota / numNota;
+
+    if(media < 6)
+        output("Reprovado por media!");
+    else
+        output("Aprovado!");
+    endif
+
+    output("Nota:");
+    output(media);
+endmain

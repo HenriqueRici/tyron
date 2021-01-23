@@ -1,6 +1,6 @@
-package lexico;
+package org.carlos.lexico;
 
-import sintatico.Terminal;
+import org.carlos.sintatico.Terminal;
 
 import java.util.Arrays;
 

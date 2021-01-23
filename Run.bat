@@ -19,7 +19,7 @@ set test_folder=%cd%\teste
 
 cd compiled
 
-java principal.Main %*
+java org.carlos.principal.Main %*
 
 endlocal
 exit /b /0

@@ -1,12 +1,10 @@
-package sintatico;
+package org.carlos.sintatico;
 
-import lexico.Tokens;
-import utilitarios.ExcecaoLexico;
-import utilitarios.ExcecaoSintatico;
-import utilitarios.Flag;
-import utilitarios.Tabela;
+import org.carlos.lexico.Tokens;
+import org.carlos.utilitarios.ExcecaoSintatico;
+import org.carlos.utilitarios.Flag;
+import org.carlos.utilitarios.Tabela;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;

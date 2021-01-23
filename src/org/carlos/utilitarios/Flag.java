@@ -1,9 +1,10 @@
-package utilitarios;
+package org.carlos.utilitarios;
 
 public enum Flag {
     LEXICO("-lexico", false),
     SINTATICO("-sintatico", false),
     SEMANTICO("-semantico", false),
+    INTERMEDIARIO("-intermediario", false),
     CODIGO_FINAL("-codigoFinal", false);
 
     private String flag;

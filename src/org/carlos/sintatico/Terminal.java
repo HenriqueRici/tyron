@@ -1,4 +1,4 @@
-package sintatico;
+package org.carlos.sintatico;
 
 public enum Terminal implements PalavrasTyron{
     FINAL(0, "FINAL"),

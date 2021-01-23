@@ -1,8 +1,8 @@
-package utilitarios;
+package org.carlos.utilitarios;
 
-import sintatico.NaoTerminal;
-import sintatico.PalavrasTyron;
-import sintatico.Terminal;
+import org.carlos.sintatico.NaoTerminal;
+import org.carlos.sintatico.PalavrasTyron;
+import org.carlos.sintatico.Terminal;
 
 import java.util.List;
 
@@ -34,9 +34,9 @@ public class Tabela {
 
     public static List<List<PalavrasTyron>> pilhaTabela(){
         return asList(
-//        0 -, < principal > ::=main<lista_comandos> endmain
+//        0 -, < org.carlos.principal > ::=main<lista_comandos> endmain
             asList(Terminal.MAIN, NaoTerminal.LISTA_COMANDO, Terminal.ENDMAIN),
-//        1 -,<principal > ::=î
+//        1 -,<org.carlos.principal > ::=î
                 List.of(),
 //        2 -,<lista_comandos > ::= <comando > <lista_comandos >
                 asList(NaoTerminal.COMANDO, NaoTerminal.LISTA_COMANDO),

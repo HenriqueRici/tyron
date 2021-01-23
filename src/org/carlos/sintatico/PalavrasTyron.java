@@ -1,4 +1,4 @@
-package sintatico;
+package org.carlos.sintatico;
 
 public interface PalavrasTyron {
     String getNome();
